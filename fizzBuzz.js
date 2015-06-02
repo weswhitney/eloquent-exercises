@@ -7,7 +7,7 @@ while (numbers <= 100) {
   } else if (numbers % 5 == 0) {
     console.log('Buzz');
   } else {
-  console.log(numbers);
+    console.log(numbers);
   }
   numbers++;
 }
