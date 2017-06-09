@@ -1,0 +1,19 @@
+{
+  "name": "eloquent-exercises",
+  "version": "1.0.0",
+  "description": "exercises from eloquent javascript",
+  "main": "chess_board.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weswhitney/eloquent-exercises.git"
+  },
+  "author": "wes whitney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weswhitney/eloquent-exercises/issues"
+  },
+  "homepage": "https://github.com/weswhitney/eloquent-exercises#readme"
+}
