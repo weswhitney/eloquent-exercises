@@ -1,19 +1,20 @@
 // position variables
-var hash = '#';
-var space = ' ';
-var board = '';
+const hash = '#', space = ' ', newLine = '\n';
 // grid variables
-var size = 81;
-var newLine = '\n';
-
+var board = '', size = 31;
+// loop through the finished lines
 for (var i = 0; i < size; i++) {
+	// loop through the individual lines
 	for (var j = 0; j < size; j++) {
+		// alternate hashtag and space
 		if ((j + i) % 2 === 0) {
-			board = board + space;
+			board += space;
 		} else {
-			board = board + hash;
+			board += hash;
 		}
 	}
-	board = board + newLine;
+	// start a new finished line
+	board += newLine;
 }
-	console.log(board);
+// display the board
+console.log(board);
