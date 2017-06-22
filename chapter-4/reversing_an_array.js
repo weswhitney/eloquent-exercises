@@ -10,20 +10,17 @@ function reverseArray(arr) {
 }
 
 function reverseArrayInPlace(arr) {
-	var increment = 0;
-	for (var i = 0; i <= arr.length - 1; i++) {
-		// var step = 1;
+	var increment = 1;
+	for (var i = 0; i <= (arr.length - 1) / 2; i++) {
+		console.log('increment ', increment);
+		var oldValue = arr[i];
 		arr[i] = arr[arr.length - increment];
+		arr[arr.length - increment] = oldValue;
 		increment = increment + 1;
-		// step = step + i;
-		console.log(increment);
-		console.log(arr[i]);
-	// return sameReversedArray;
+		console.log('setting the index to ', arr[i]);
+		console.log('array ', arr);
 	}
-		console.log(arr);
+		console.log('output ', arr);
 }
-var testArr = [1, 2, 3, 4, 5];
-console.log(reverseArray(['q', 'b', 'c']));
-console.log(testArr);
 
-reverseArrayInPlace([1, 2, 3, 4, 5, 6, 7])
+reverseArrayInPlace(["t", "r", "a", "f"]);
